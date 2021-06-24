@@ -20,28 +20,28 @@ public class menu {
         valorInicial = vI;
     }
 
-    public String getNombrePlato() {
+    public String obtenerNombrePlato() {
         return nombrePlato;
     }
 
-    public void setNombrePlato(String nombrePlato) {
-        this.nombrePlato = nombrePlato;
+    public void establecerNombrePlato(String nP) {
+        nombrePlato = nP;
     }
 
-    public double getValorMenu() {
+    public double obtenerValorMenu() {
         return valorMenu;
     }
 
-    public void setValorMenu(double valorMenu) {
-        this.valorMenu = valorMenu;
+    public void establecerValorMenu(double vM) {
+        valorMenu = vM;
     }
 
-    public double getValorInicial() {
+    public double obtenerValorInicial() {
         return valorInicial;
     }
 
-    public void setValorInicial(double valorInicial) {
-        this.valorInicial = valorInicial;
+    public void establecerValorInicial(double vI) {
+        valorInicial = vI;
     }
     
     
