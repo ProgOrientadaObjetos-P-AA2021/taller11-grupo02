@@ -9,6 +9,7 @@ package trabajogrupal;
  *
  * @author Usuario iTC
  */
-public class menuNiños {
+public class menuNiños{
+   
     
 }

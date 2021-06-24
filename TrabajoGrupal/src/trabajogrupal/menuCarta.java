@@ -9,6 +9,6 @@ package trabajogrupal;
  *
  * @author Usuario iTC
  */
-public class menuCarta {
-    
+public class menuCarta{
+   
 }
