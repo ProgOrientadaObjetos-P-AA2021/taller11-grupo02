@@ -10,11 +10,12 @@ package trabajogrupal;
  * @author Usuario iTC
  */
 public class menuDia extends menu {
+
     private double valorPostre;
     private double valorBebida;
 
     public menuDia(String nP, double vM, double vI, double vP, double vB) {
-        super(nP, vM, vI);
+        super(nP, vI);
         valorPostre = vP;
         valorBebida = vB;
     }
@@ -35,11 +36,15 @@ public class menuDia extends menu {
         valorBebida = vB;
     }
 
+    
+    
     @Override
     public String toString() {
-        return String.format("Nombre del plato: %s\nValor del menu: %.2f\n"
-                + "Valor inicial del menu: %.2f\nValor del postre: %.2f\n"
-                + "Valor Bebida: %.2f\n", obtenerNombrePlato(), obtenerValorMenu(),
-                obtenerValorInicial(), obtenerValorPostre(), obtenerValorBebida());
+        return String.format("%s" + super.toString()
+                + "Valor del Postre:%s\n"
+                + "Valor de bebida: %.2f\n",
+                 obtenerValorPostre(),
+                obtenerValorBebida());
     }
+
 }

@@ -9,14 +9,16 @@ package trabajogrupal;
  *
  * @author Usuario iTC
  */
-public class menu {
+public abstract class menu {
+
     protected String nombrePlato;
     protected double valorMenu;
     protected double valorInicial;
     
-    public menu(String nP, double vM, double vI){
+
+    public menu(String nP, double vI) {
         nombrePlato = nP;
-        valorMenu = vM;
+     
         valorInicial = vI;
     }
 
@@ -28,19 +30,23 @@ public class menu {
         nombrePlato = nP;
     }
 
-    public double obtenerValorMenu() {
-        return valorMenu;
-    }
-
-    public void establecerValorMenu(double vM) {
-        valorMenu = vM;
-    }
-
     public double obtenerValorInicial() {
         return valorInicial;
     }
 
     public void establecerValorInicial(double vI) {
         valorInicial = vI;
+    }
+    
+    public abstract void establacerValorMenu();
+    
+    public double obtenerValorTotal(){
+        return valorMenu;
+    }
+@Override
+    public String toString() {
+        return String.format("Nombre del plato: %s\n"
+                + "Valor inicial del menu: %.2f\n", obtenerNombrePlato(),
+                obtenerValorInicial());
     }
 }
