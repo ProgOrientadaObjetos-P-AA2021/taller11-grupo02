@@ -43,6 +43,4 @@ public class menu {
     public void establecerValorInicial(double vI) {
         valorInicial = vI;
     }
-    
-    
 }

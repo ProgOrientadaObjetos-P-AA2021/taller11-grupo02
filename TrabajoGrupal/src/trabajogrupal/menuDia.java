@@ -9,6 +9,13 @@ package trabajogrupal;
  *
  * @author Usuario iTC
  */
-public class menuDia {
+public class menuDia extends menu {
+    protected double valorPostre;
+    protected double valorbebida;
+    
+    public menuDia(String nP, double vM, double vI){
+        super(nP, vM, vI);
+        
+    }
     
 }
