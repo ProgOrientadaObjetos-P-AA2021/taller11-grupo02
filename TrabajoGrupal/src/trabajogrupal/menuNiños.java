@@ -9,6 +9,7 @@ package trabajogrupal;
  *
  * @author Usuario iTC
  */
+
 public class menuNiños extends menu {
     private double valorHelado;
     private double valorPastel;
@@ -34,7 +35,6 @@ public class menuNiños extends menu {
     public void establecerValorPastel(double vP) {
         valorPastel = vP;
     }
-    
     
     public String toString() {
         return String.format("Nombre del plato: %s\nValor del menu: %.2f\n"
