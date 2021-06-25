@@ -9,10 +9,15 @@ package trabajogrupal;
  *
  * @author Usuario iTC
  */
+<<<<<<< HEAD
 public class menuEconomico extends Menu {
+=======
+public class MenuEconomico extends Menu {
+>>>>>>> d4fa515bb961e2c58c80ee99ce4b197bcc15c938
 
     protected double descuento;
 
+<<<<<<< HEAD
     public menuEconomico(String nP, double vI, double d) {
         super(nP, vI);
         establecerDescuento(d);
@@ -29,6 +34,25 @@ public class menuEconomico extends Menu {
 
     public double obtenerDescuento() {
         return descuento;
+=======
+    public MenuEconomico(String nP, double vI) {
+        super(nP, vI);
+ 
+        // 10
+    }
+
+    public void establecerDescuento() {
+        descuento = valorInicial * 0.1;
+    }
+
+    public double obtenerDescuento() {
+        return descuento;
+    }
+
+    @Override
+    public void establacerValorMenu() {
+        valorMenu = valorInicial - descuento;
+>>>>>>> d4fa515bb961e2c58c80ee99ce4b197bcc15c938
     }
 
     @Override

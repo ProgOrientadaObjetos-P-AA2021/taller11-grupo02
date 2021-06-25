@@ -9,15 +9,26 @@ package trabajogrupal;
  *
  * @author Usuario iTC
  */
+<<<<<<< HEAD
 public class menuDia extends Menu {
+=======
+public class MenuDia extends Menu {
+>>>>>>> d4fa515bb961e2c58c80ee99ce4b197bcc15c938
 
     protected double valorPostre;
     protected double valorBebida;
 
+<<<<<<< HEAD
     public menuDia(String nom, double vI, double vP, double vB) {
         super(nom, vI);
         establecerValorPostre(vP);
         establecerValorBebidas(vB);
+=======
+    public MenuDia(String nP, double vI, double vP, double vB) {
+        super(nP, vI);
+        valorPostre = vP;
+        valorBebida = vB;
+>>>>>>> d4fa515bb961e2c58c80ee99ce4b197bcc15c938
     }
 
     @Override
@@ -41,6 +52,15 @@ public class menuDia extends Menu {
         return valorBebida;
     }
 
+<<<<<<< HEAD
+=======
+       @Override
+    public void establacerValorMenu() {
+        valorMenu =   valorInicial+valorPostre+valorBebida;
+    }
+
+    
+>>>>>>> d4fa515bb961e2c58c80ee99ce4b197bcc15c938
     @Override
     public String toString() {
 

@@ -9,17 +9,29 @@ package trabajogrupal;
  *
  * @author Usuario iTC
  */
+<<<<<<< HEAD
 public class menuCarta extends Menu {
+=======
+public class MenuCarta extends Menu {
+>>>>>>> d4fa515bb961e2c58c80ee99ce4b197bcc15c938
 
     protected double valorPorcionGuarnicion;
     protected double valorBebida;
     protected double porcentajeAdicion;
 
+<<<<<<< HEAD
     public menuCarta(String nP, double vI, double vP, double vB, double pA) {
         super(nP, vI);
         establecerValorGuarnicion(vP);
         establecerValorBebidas(vB);
         establecerPorcentajeAdicion(pA);
+=======
+    public MenuCarta(String nP, double vI, double vG, double vB) {
+        super(nP, vI);
+        valorGuarni = vG;
+        valorBebida = vB;
+    
+>>>>>>> d4fa515bb961e2c58c80ee99ce4b197bcc15c938
     }
 
     @Override
@@ -46,6 +58,7 @@ public class menuCarta extends Menu {
         valorBebida = vH;
     }
 
+<<<<<<< HEAD
     public void establecerPorcentajeAdicion(double pA) {
         porcentajeAdicion = pA;
     }
@@ -61,6 +74,19 @@ public class menuCarta extends Menu {
     public double obtenerPorcentajeAdicion() {
         return porcentajeAdicion;
     }
+=======
+    public double obtenerPocentajeAdi() {
+        return pocentajeAdi;
+    }
+
+    public void establecerPocentajeAdi(double n) {
+        pocentajeAdi= valorInicial*0.1;
+    }
+       @Override
+    public void establacerValorMenu() {
+        valorMenu =  valorGuarni+ valorInicial+valorBebida+pocentajeAdi;
+    }
+>>>>>>> d4fa515bb961e2c58c80ee99ce4b197bcc15c938
 
     @Override
     public String toString() {

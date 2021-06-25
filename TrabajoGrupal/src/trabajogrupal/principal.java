@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package trabajogrupal;
+package restaurante;
 
 import java.util.ArrayList;
 
@@ -12,15 +12,16 @@ import java.util.ArrayList;
  * @author Usuario iTC
  */
 public class Principal {
-     public static void main(String[] args) {
-        
+
+    public static void main(String[] args) {
+
         ArrayList<Menu> listaMenus = new ArrayList<>();
 
-        menuNiños nino1 = new menuNiños("Plato 1", 6, 5.3, 5.10);
+        menuNiño nino1 = new menuNiño("Plato 1", 6, 5.3, 5.10);
 
-        menuNiños nino2 = new menuNiños("Plato 2", 10, 5.9, 5);
+        menuNiño nino2 = new menuNiño("Plato 2", 10, 5.9, 5);
 
-        menuEconomico menuecominico = new menuEconomico("Plato 3", 7,30);
+        menuEconomico menuecominico = new menuEconomico("Plato 3", 7, 30);
 
         menuDia menudia = new menuDia("Plato 4", 7, 7, 4.5);
 
@@ -41,6 +42,6 @@ public class Principal {
         cuenta.establecerSubTotal();
         cuenta.establecerValorTotal();
         System.out.println(cuenta);
-        
+
     }
 }
