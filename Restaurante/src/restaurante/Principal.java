@@ -24,7 +24,7 @@ public class Principal {
        
         MenuDia menudia = new MenuDia("Plato 4", 7, 7, 4.5);
 
-        MenuCarta menucarta = new MenuCarta("Plato 5", 9, 5, 3.5);
+        MenuCarta menucarta = new MenuCarta("Plato 5", 2, 1, 1);
         menucarta.establecerPorcentajeAdicion();
                 
                 
@@ -36,7 +36,7 @@ public class Principal {
         listaMenus.add(menucarta);
 
         for (int i = 0; i < listaMenus.size(); i++) {
-            listaMenus.get(i).establecerValorMenu();
+            listaMenus.get(i).establecerValorMenu();    
         }
 
         Cuenta cuenta = new Cuenta("Jose Criollo - Joel Ordoñes "

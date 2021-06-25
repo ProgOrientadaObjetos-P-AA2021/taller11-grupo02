@@ -32,12 +32,8 @@ public class MenuCarta extends Menu {
     public void establecerValorMenu(){
         valorMenu = valorPorcionGuarnicion + valorBebida + 
                 valorInicial + porcentajeAdicion;
+       
     }    
-
-    @Override
-    public void establecerValorInicial(double vI){
-        valorInicial = vI;
-    }
 
     
     public void establecerValorGuarnicion(double vP){

@@ -39,7 +39,7 @@ public abstract class Menu {
     }
 
     public double obtenerValorMenu() {
-        return valorInicial;
+        return valorMenu;
     }
 
 }
