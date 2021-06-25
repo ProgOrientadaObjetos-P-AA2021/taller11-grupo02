@@ -9,6 +9,9 @@ package trabajogrupal;
  *
  * @author Usuario iTC
  */
-public class menuEconomico {
-    
+public class menuEconomico extends menu {
+
+ 
 }
+
+
