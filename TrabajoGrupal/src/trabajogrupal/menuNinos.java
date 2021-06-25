@@ -9,14 +9,14 @@ package trabajogrupal;
  *
  * @author Usuario iTC
  */
+public class MenuNinos extends Menu {
 
-public class menuNiños extends menu {
     private double valorHelado;
     private double valorPastel;
 
-    public menuNiños(String nP, double vM, double vI, double vH, double vP) {
+    public MenuNinos(String nP, double vI, double vH, double vP) {
         super(nP, vI);
-        valorHelado= vH;
+        valorHelado = vH;
         valorPastel = vP;
     }
 
@@ -25,7 +25,7 @@ public class menuNiños extends menu {
     }
 
     public void establecerValorHelado(double vH) {
-      valorHelado = vH;
+        valorHelado = vH;
     }
 
     public double obtenerValorPastel() {
@@ -35,19 +35,18 @@ public class menuNiños extends menu {
     public void establecerValorPastel(double vP) {
         valorPastel = vP;
     }
-    
-   @Override
-    public void establecerValorMenu() {
-        valorMenu = valorHelado+valorPastel+valorInicial;
+
+    @Override
+    public void establacerValorMenu() {
+        valorMenu = valorHelado + valorPastel + valorInicial;
     }
-    
-    
-  @Override
+
+    @Override
     public String toString() {
         return String.format("%s" + super.toString()
                 + "Valor de porcion de helado:%s\n"
                 + "Valor de porcion de pastel: %.2f\n",
-                 obtenerValorHelado(),
+                obtenerValorHelado(),
                 obtenerValorPastel());
     }
 }

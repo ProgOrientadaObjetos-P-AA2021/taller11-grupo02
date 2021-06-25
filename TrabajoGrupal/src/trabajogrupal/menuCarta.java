@@ -9,18 +9,17 @@ package trabajogrupal;
  *
  * @author Usuario iTC
  */
-public class menuCarta extends menu {
+public class MenuCarta extends Menu {
 
     private double valorGuarni;
     private double valorBebida;
     private double pocentajeAdi;
 
-    public menuCarta(String nP, double vM, double vI, double vP, double vB,
-    double pA) {
+    public MenuCarta(String nP, double vI, double vG, double vB) {
         super(nP, vI);
-        valorGuarni = vP;
+        valorGuarni = vG;
         valorBebida = vB;
-        pocentajeAdi = pA;
+    
     }
 
     public double obtenervalorGuarni() {
@@ -40,12 +39,17 @@ public class menuCarta extends menu {
     }
 
     public double obtenerPocentajeAdi() {
-        return valorBebida;
+        return pocentajeAdi;
     }
 
     public void establecerPocentajeAdi(double n) {
-        valorBebida = n;
+        pocentajeAdi= valorInicial*0.1;
     }
+       @Override
+    public void establacerValorMenu() {
+        valorMenu =  valorGuarni+ valorInicial+valorBebida+pocentajeAdi;
+    }
+
     @Override
     public String toString() {
         return String.format("%s" + super.toString()

@@ -9,12 +9,12 @@ package trabajogrupal;
  *
  * @author Usuario iTC
  */
-public class menuDia extends menu {
+public class MenuDia extends Menu {
 
     private double valorPostre;
     private double valorBebida;
 
-    public menuDia(String nP, double vM, double vI, double vP, double vB) {
+    public MenuDia(String nP, double vI, double vP, double vB) {
         super(nP, vI);
         valorPostre = vP;
         valorBebida = vB;
@@ -36,7 +36,11 @@ public class menuDia extends menu {
         valorBebida = vB;
     }
 
-    
+       @Override
+    public void establacerValorMenu() {
+        valorMenu =   valorInicial+valorPostre+valorBebida;
+    }
+
     
     @Override
     public String toString() {
