@@ -9,18 +9,18 @@ package restaurante;
  *
  * @author Usuario iTC
  */
-public class menuCarta extends Menu {
+public class MenuCarta extends Menu {
 
 
-    protected double valorPorcionGuarnicion;
-    protected double valorBebida;
-    protected double porcentajeAdicion;
+    private double valorPorcionGuarnicion;
+    private double valorBebida;
+    private double porcentajeAdicion;
     
-    public menuCarta(String nP, double vI, double vP, double vB, double pA){
+    public MenuCarta(String nP, double vI, double vP, double vB){
         super(nP,vI);
         establecerValorGuarnicion(vP);
         establecerValorBebidas(vB);
-        establecerPorcentajeAdicion(pA);
+      
     }
     
     @Override
@@ -31,7 +31,7 @@ public class menuCarta extends Menu {
     @Override
     public void establecerValorMenu(){
         valorMenu = valorPorcionGuarnicion + valorBebida + 
-                valorInicial + (valorInicial * (porcentajeAdicion/100));
+                valorInicial + porcentajeAdicion;
     }    
 
     @Override
@@ -48,8 +48,8 @@ public class menuCarta extends Menu {
         valorBebida = vH;
     }
     
-    public void establecerPorcentajeAdicion(double pA){
-        porcentajeAdicion = pA;
+    public void establecerPorcentajeAdicion(){
+        porcentajeAdicion = valorInicial*0.20 ;
     }
     
     public double obtenerValorGuarnicion(){

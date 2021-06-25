@@ -9,37 +9,37 @@ package restaurante;
  *
  * @author Usuario iTC
  */
-public abstract class Menu{
+public abstract class Menu {
 
     protected String nombrePlato;
     protected double valorInicial;
     protected double valorMenu;
 
-    
-    public Menu(String nP, double vI){
+    public Menu(String nP, double vI) {
         nombrePlato = nP;
         valorInicial = vI;
     }
-    
-    public void establecerNombrePlato(String nP){
+
+    public void establecerNombrePlato(String nP) {
         nombrePlato = nP;
     }
 
     public abstract void establecerValorMenu();
-      
+
     public void establecerValorInicial(double vI) {
         valorInicial = vI;
     }
-    
-    public String obtenerNombrePlato(){
+
+    public String obtenerNombrePlato() {
         return nombrePlato;
     }
-    
-    public double obtenerValorInicial(){
+
+    public double obtenerValorInicial() {
         return valorInicial;
     }
-    
-    public double obtenerValorMenu(){
-        return valorMenu;
-    }      
+
+    public double obtenerValorMenu() {
+        return valorInicial;
+    }
+
 }

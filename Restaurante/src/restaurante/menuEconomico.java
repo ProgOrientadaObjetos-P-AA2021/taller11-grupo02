@@ -9,22 +9,22 @@ package restaurante;
  *
  * @author Usuario iTC
  */
-public class menuEconomico extends Menu {
+public class MenuEconomico extends Menu {
     
-    protected double descuento;
+    private double descuento;
     
-    public menuEconomico(String nP, double vI, double d){
+    public MenuEconomico(String nP, double vI){
         super( nP, vI);
-        establecerDescuento(d);
+       
     }
     
     @Override
     public void establecerValorMenu(){
-        valorMenu = valorInicial - ( valorInicial * (descuento / 100));
+        valorMenu = valorInicial - descuento;
     }
     
-    public void establecerDescuento(double tipo){
-        descuento = tipo;
+    public void establecerDescuento(){
+        descuento = valorInicial*0.1;
     }
     
     public double obtenerDescuento(){

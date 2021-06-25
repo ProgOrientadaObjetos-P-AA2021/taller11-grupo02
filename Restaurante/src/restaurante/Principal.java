@@ -15,16 +15,20 @@ public class Principal {
         
         ArrayList<Menu> listaMenus = new ArrayList<>();
 
-        menuNiño nino1 = new menuNiño("Plato 1", 6, 5.3, 5.10);
+        MenuNiño nino1 = new MenuNiño("Plato 1", 6, 5.3, 5.10);
 
-        menuNiño nino2 = new menuNiño("Plato 2", 10, 5.9, 5);
+        MenuNiño nino2 = new MenuNiño("Plato 2", 10, 5.9, 5);
 
-        menuEconomico menuecominico = new menuEconomico("Plato 3", 7,30);
+        MenuEconomico menuecominico = new MenuEconomico("Plato 3",7.30);
+        menuecominico.establecerDescuento();
+       
+        MenuDia menudia = new MenuDia("Plato 4", 7, 7, 4.5);
 
-        menuDia menudia = new menuDia("Plato 4", 7, 7, 4.5);
-
-        menuCarta menucarta = new menuCarta("Plato 5", 9, 5, 3.5, 8);
-
+        MenuCarta menucarta = new MenuCarta("Plato 5", 9, 5, 3.5);
+        menucarta.establecerPorcentajeAdicion();
+                
+                
+                
         listaMenus.add(nino1);
         listaMenus.add(nino2);
         listaMenus.add(menuecominico);
@@ -35,7 +39,8 @@ public class Principal {
             listaMenus.get(i).establecerValorMenu();
         }
 
-        Cuenta cuenta = new Cuenta("Jose Criollo - Joel Ordoñes - Jhordan Bustamante ",
+        Cuenta cuenta = new Cuenta("Jose Criollo - Joel Ordoñes "
+                + "- Jhordan Bustamante ",
                 listaMenus, 0.10);
         cuenta.establecerSubTotal();
         cuenta.establecerValorTotal();

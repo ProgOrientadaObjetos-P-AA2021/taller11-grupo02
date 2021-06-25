@@ -9,12 +9,12 @@ package restaurante;
  *
  * @author Usuario iTC
  */
-public class menuDia extends Menu {
+public class MenuDia extends Menu {
 
-    protected double valorPostre;
-    protected double valorBebida;
+    private double valorPostre;
+    private double valorBebida;
     
-    public menuDia(String nom,double vI,double vP,double vB){
+    public MenuDia(String nom,double vI,double vP,double vB){
         super(nom,vI);
         establecerValorPostre(vP);
         establecerValorBebidas(vB);

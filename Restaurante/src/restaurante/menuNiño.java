@@ -9,13 +9,13 @@ package restaurante;
  *
  * @author Usuario iTC
  */
-public class menuNiño extends Menu {
+public class MenuNiño extends Menu {
     
 
-    protected double valorHelado;
-    protected double valorPastel;
+    private double valorHelado;
+    private double valorPastel;
     
-    public menuNiño(String nP, double vI, double vH, double vP){
+    public MenuNiño(String nP, double vI, double vH, double vP){
         super(nP, vI);
         establecerValorHelado(vH);
         establecerValorPastel(vP);

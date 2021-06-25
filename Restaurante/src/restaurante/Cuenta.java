@@ -11,11 +11,11 @@ import java.util.ArrayList;
  */
 public class Cuenta {
     
-    protected String nombreCliente;
-    protected ArrayList <Menu> menu = new ArrayList<>();
-    protected double iva;
-    protected double valorTotal;
-    protected double subTotal;
+    private String nombreCliente;
+    private ArrayList <Menu> menu = new ArrayList<>();
+    private double iva;
+    private double valorTotal;
+    private double subTotal;
    
     
     public Cuenta(String nC, ArrayList <Menu> lista, double i) {
